@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: Circular;
+    src: url(/Fonts/CircularSp-Book-4eaffdf96f4c6f984686e93d5d9cb325.ttf);
+}
+
+main {
+    color: #fff;
+    fill: #fff;
+    background-color: #000;
+    font-family: Circular;
+}
+
+body {
+    font-family: Circular;
+    color: #fff;
+    fill: #fff;
+    background-color: #000;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.leftPortion {
+    width: 23.5vw;
+    height: 100vw;
+    /* position: absolute; */
+}
+
+.rightPortion {
+    width: 74vw;
+    position: relative;
+    height: 100vw;
+}
+
+.bar1 {
+    /* width: 25vw; */
+    /* position: sticky; */
+    background-color: #121212;
+    border-radius: 5px;
+    padding: 23px;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.bar1 h2 {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #A6A6A6;
+}
+
+.bar1 h2:hover {
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 17px 0;
+    gap: 20px;
+}
+
+.library {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.libTop {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 70px;
+    width: 130px;
+    padding: 10px 0;
+    border: none;
+}
+
+button:hover {
+    scale: 1.1;
+}
+
+
+.playlist {
+    flex-direction: column;
+    display: flex;
+    background-color: #242424;
+    border-radius: 4px;
+    gap: 10px;
+    margin: -14px;
+    padding: 14px;
+}
+
+.search svg {
+    width: 24px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    color: #A6A6A6;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footBtn svg {
+    fill: #fff;
+}
+
+.footBtn:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.footBtn {
+    margin-top: 100px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    cursor: pointer;
+    padding: 4px 5px;
+    color: #fff;
+    border-radius: 70px;
+    border: 1px solid #A6A6A6;
+}
+
+.header {
+    background-color: #121212;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    position: sticky;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 8px;
+}
+
+.arrows .arrow {
+    /* padding: 20px; */
+    background-color: #000;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.arrows svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #A6A6A6;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+.headerBtn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+
+.Login {
+    background-color: #fff;
+    color: #121212;
+    border-radius: 70px;
+    padding: 12px 25px;
+    font-size: 12px;
+}
+
+.Login:hover {
+    scale: 1.1;
+}
+
+.sign:hover {
+    color: #fff;
+}
+
+.sign {
+    font-size: 11px;
+    color: #A6A6A6;
+}
+
+.cardContainer {
+    padding: 20px;
+    margin-top: 8px;
+    background-color: #121212;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.cardInner {
+    background-color: #171717;
+    border-radius: 5px;
+    width: 185px;
+    padding: 15px;
+    transition: all linear 0.25s;
+    position: relative;
+    /* Add this line to position the play button relative to the card */
+}
+
+.cardInner .image {
+    border-radius: 5px;
+    /* overflow: hidden; */
+    height: 156px;
+    width: 156px;
+    object-fit: cover;
+}
+
+.cardInner h2 {
+    font-size: 18px;
+    padding: 13px 0;
+}
+
+.cardInner p {
+    font-size: 14px;
+    color: #979494;
+}
+
+.cardInner .image>img {
+    height: 156px;
+    width: 156px;
+}
+
+.cardInner:hover {
+    background-color: #272727;
+
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
+.cardInner:hover .playBtn svg {
+    transform: scale(1);
+}
+
+.playBtn {
+    position: absolute;
+}
+
+.playBtn svg {
+    width: 45px;
+    padding: 10px;
+    position: absolute;
+    top: -55px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    left: 105px;
+    transform: scale(0);
+    border-radius: 50%;
+    fill: #000;
+    background-color: #1BD760;
+    transition: all linear 0.25s;
+}
+
+
+/* WebKit (Chrome, Safari) scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #404040;
+    /* Color of the thumb */
+    border-radius: 6px;
+    /* Rounded corners of the thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121212;
+    /* Color of the track */
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    gap: 30px;
+}
+
+.player{
+    font-size: 45px;
+}
+
+.pauseplay{
+    position: absolute;
+}
+
+.playy{
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
